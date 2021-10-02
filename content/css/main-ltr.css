@@ -1,0 +1,243 @@
+/*
+**  direction setting variables 
+*/
+/*
+**  font family setting variables 
+*/
+/*******************************  import All used scss files   ******************************/
+/*
+**  Font size variables 
+*/
+/*
+** Colors variables 
+*/
+/*
+**  No function need to implement this web app.
+*/
+/*
+**  clearfix mixin  
+*/
+/****************** MEDIA QUERY MANAGER *****************/
+/*
+** Bootstrap 5 breakpoints
+**  xs: 0, // X-Small devices (portrait phones, less than 576px)
+**  sm: 576px, // Small devices (landscape phones, less than 768px)
+**  md: 768px,  // Medium devices (tablets, less than 992px)
+**  lg: 992px,// Large devices (desktops, less than 1200px)
+**  xl: 1200px,// X-Large devices (large desktops, less than **1400px)
+** xxl: 1400px  
+*/
+/*
+**  Desktop First MEDIA QUERY MANAGER Mixin.
+**  we used bootstrap5 Breakpoints in px.
+**  we use Max-width We occasionally use media queries that go the given screen size or smaller) --> max-width and down. 
+*/
+/*
+**  Mobile First MEDIA QUERY MANAGER Mixin.
+**  we used bootstrap5 Breakpoints in px.
+**  we use Min-width We occasionally use media queries that go the given screen size or larger) --> min-width and up. 
+*/
+/*
+**  Single Breakpoint MEDIA QUERY MANAGER Mixin.
+**  we used bootstrap5 Breakpoints in px.
+**  we use Min-width & max-width to specify the a single breakpoin 
+*/
+/*
+**  Between Breakpoints MEDIA QUERY MANAGER Mixin.
+**  we used bootstrap5 Breakpoints in px.
+**  Similarly, media queries may span multiple breakpoints widths:
+**  we use Min-width & max-width to specify the a range breakpoint 
+*/
+@font-face {
+  font-family: "Spartan";
+  src: url("../fonts/Spartan/Spartan-Regular.eot");
+  src: url("../fonts/Spartan/Spartan-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Spartan/Spartan-Regular.woff2") format("woff2"), url("../fonts/Spartan/Spartan-Regular.woff") format("woff"), url("../fonts/Spartan/Spartan-Regular.ttf") format("truetype"), url("../fonts/Spartan/Spartan-Regular.svg#Spartan-Regular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap; }
+
+@font-face {
+  font-family: "Spartan";
+  src: url("../fonts/Spartan/Spartan-Regular_1.eot");
+  src: url("../fonts/Spartan/Spartan-Regular_1.eot?#iefix") format("embedded-opentype"), url("../fonts/Spartan/Spartan-Regular_1.woff2") format("woff2"), url("../fonts/Spartan/Spartan-Regular_1.woff") format("woff"), url("../fonts/Spartan/Spartan-Regular_1.ttf") format("truetype"), url("../fonts/Spartan/Spartan-Regular_1.svg#Spartan-Regular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap; }
+
+@font-face {
+  font-family: "Spartan";
+  src: url("../fonts/Spartan/Spartan-Medium.eot");
+  src: url("../fonts/Spartan/Spartan-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/Spartan/Spartan-Medium.woff2") format("woff2"), url("../fonts/Spartan/Spartan-Medium.woff") format("woff"), url("../fonts/Spartan/Spartan-Medium.ttf") format("truetype"), url("../fonts/Spartan/Spartan-Medium.svg#Spartan-Medium") format("svg");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap; }
+
+@font-face {
+  font-family: "Spartan";
+  src: url("../fonts/Spartan/Spartan-Bold.eot");
+  src: url("../fonts/Spartan/Spartan-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Spartan/Spartan-Bold.woff2") format("woff2"), url("../fonts/Spartan/Spartan-Bold.woff") format("woff"), url("../fonts/Spartan/Spartan-Bold.ttf") format("truetype"), url("../fonts/Spartan/Spartan-Bold.svg#Spartan-Bold") format("svg");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap; }
+
+@font-face {
+  font-family: "Spartan";
+  src: url("../fonts/Spartan/Spartan-Regular_2.eot");
+  src: url("../fonts/Spartan/Spartan-Regular_2.eot?#iefix") format("embedded-opentype"), url("../fonts/Spartan/Spartan-Regular_2.woff2") format("woff2"), url("../fonts/Spartan/Spartan-Regular_2.woff") format("woff"), url("../fonts/Spartan/Spartan-Regular_2.ttf") format("truetype"), url("../fonts/Spartan/Spartan-Regular_2.svg#Spartan-Regular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap; }
+
+/*
+**  CSS Initializati Reset
+*/
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit; }
+
+/*
+**  Set root font => to set the default 1rem unit value
+*/
+html {
+  font-size: 62.5%;
+  /* 1rem = 10px -->  10/16 *100% = 62.5% */ }
+
+/*
+**  Set default inherited properties in body element 
+*/
+body {
+  background-color: white;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Spartan", sans-serif;
+  font-size: 1.5rem;
+  font-weight: normal;
+  line-height: 1.83;
+  color: black; }
+
+/*
+**  Reset builts of ul and ol  Lists.
+*/
+ul,
+ol {
+  list-style-type: none;
+  margin: 0;
+  padding: 0; }
+
+.reviews {
+  background: url(../assets/images/bg-pattern-top-desktop.svg) no-repeat, url(../assets/images/bg-pattern-bottom-desktop.svg) no-repeat;
+  background-position: left 0 top -9rem, right 0 bottom -9rem; }
+  @media (max-width: 767.98px) {
+    .reviews {
+      background: url(../assets/images/bg-pattern-top-mobile.svg) no-repeat, url(../assets/images/bg-pattern-bottom-mobile.svg) no-repeat;
+      background-position: left 0 top -9rem, right 0 bottom -9rem; } }
+  .reviews__head {
+    color: #502050; }
+    @media (max-width: 767.98px) {
+      .reviews__head {
+        text-align: center; } }
+    .reviews__head__title {
+      width: 75%;
+      font-size: 4rem;
+      font-weight: 700; }
+      @media (max-width: 767.98px) {
+        .reviews__head__title {
+          margin: auto;
+          font-size: 3rem; } }
+    .reviews__head__desc {
+      width: 85%; }
+      @media (max-width: 767.98px) {
+        .reviews__head__desc {
+          width: 100%;
+          padding-top: 2rem; } }
+  .reviews__rates {
+    width: 75%; }
+    @media (max-width: 991.98px) {
+      .reviews__rates {
+        width: 100%; } }
+    .reviews__rates:hover .reviews__rates__rate:nth-child(2) {
+      -webkit-transform: translateX(10%);
+              transform: translateX(10%); }
+      @media (max-width: 767.98px) {
+        .reviews__rates:hover .reviews__rates__rate:nth-child(2) {
+          -webkit-transform: translateX(0%);
+                  transform: translateX(0%); } }
+    .reviews__rates:hover .reviews__rates__rate:nth-child(3) {
+      -webkit-transform: translateX(20%);
+              transform: translateX(20%); }
+      @media (max-width: 767.98px) {
+        .reviews__rates:hover .reviews__rates__rate:nth-child(3) {
+          -webkit-transform: translateX(0%);
+                  transform: translateX(0%); } }
+    .reviews__rates__rate {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      padding-left: 3rem;
+      background-color: #f7f2f7;
+      border-radius: 0.5rem;
+      -webkit-transition: all ease 0.7s;
+      transition: all ease 0.7s;
+      padding-right: 3rem; }
+      @media (max-width: 767.98px) {
+        .reviews__rates__rate {
+          -webkit-box-orient: vertical;
+          -webkit-box-direction: normal;
+              -ms-flex-direction: column;
+                  flex-direction: column; } }
+      .reviews__rates__rate__stars {
+        padding-right: 3rem; }
+        @media (max-width: 767.98px) {
+          .reviews__rates__rate__stars {
+            padding-right: 0; } }
+        .reviews__rates__rate__stars__star {
+          margin-left: 0.25rem; }
+      .reviews__rates__rate__content {
+        color: #502050;
+        font-weight: 700; }
+        @media (max-width: 767.98px) {
+          .reviews__rates__rate__content {
+            padding-top: 1rem; } }
+  .reviews__cards {
+    padding-top: 5rem; }
+    .reviews__cards__card {
+      background-color: #502050;
+      border-radius: 0.7rem; }
+      .reviews__cards__card__content {
+        padding: 2rem; }
+        @media (max-width: 767.98px) {
+          .reviews__cards__card__content {
+            padding: 4rem; } }
+      .reviews__cards__card__head {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        padding-bottom: 2rem; }
+      .reviews__cards__card__img {
+        width: 5rem;
+        margin-right: 2rem; }
+        .reviews__cards__card__img img {
+          border-radius: 50%;
+          width: 100%; }
+      .reviews__cards__card__title {
+        font-weight: 700;
+        text-transform: capitalize; }
+        .reviews__cards__card__title:first-child {
+          color: #f7f2f7; }
+        .reviews__cards__card__title:last-child {
+          color: #ee68a4; }
+      .reviews__cards__card__desc {
+        color: #f7f2f7;
+        font-size: 1.3rem; }
+
+/*# sourceMappingURL=main-ltr.css.map */

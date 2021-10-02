@@ -1,0 +1,154 @@
+//========== START MISSION SECTION ==========//
+
+.reviews {
+  background: url(../assets/images/bg-pattern-top-desktop.svg) no-repeat,
+    url(../assets/images/bg-pattern-bottom-desktop.svg) no-repeat;
+  background-position: #{$start} 0 top -9rem, #{$end} 0 bottom -9rem;
+
+  @include rwd-df-down(sm) {
+    background: url(../assets/images/bg-pattern-top-mobile.svg) no-repeat,
+      url(../assets/images/bg-pattern-bottom-mobile.svg) no-repeat;
+    background-position: #{$start} 0 top -9rem, #{$end} 0 bottom -9rem;
+  }
+
+  &__head {
+    color: $primary-dark-color;
+
+    @include rwd-df-down(sm) {
+      text-align: center;
+    }
+
+    &__title {
+      width: 75%;
+      font-size: 4rem;
+      font-weight: 700;
+
+      @include rwd-df-down(sm) {
+        margin: auto;
+        font-size: 3rem;
+      }
+    }
+
+    &__desc {
+      width: 85%;
+
+      @include rwd-df-down(sm) {
+        width: 100%;
+        padding-top: 2rem;
+      }
+    }
+  }
+
+  &__rates {
+    width: 75%;
+
+    @include rwd-df-down(md) {
+      width: 100%;
+    }
+
+    &:hover {
+      .reviews__rates__rate:nth-child(2) {
+        transform: translateX(10%);
+        @include rwd-df-down(sm) {
+          transform: translateX(0%);
+        }
+      }
+
+      .reviews__rates__rate:nth-child(3) {
+        transform: translateX(20%);
+
+        @include rwd-df-down(sm) {
+          transform: translateX(0%);
+        }
+      }
+    }
+
+    &__rate {
+      display: flex;
+      align-items: center;
+      padding-#{$start}: 3rem;
+      background-color: $Neutral-light-color;
+      border-radius: 0.5rem;
+      transition: all ease 0.7s;
+      padding-#{$end}: 3rem;
+
+      @include rwd-df-down(sm) {
+        flex-direction: column;
+      }
+
+      &__stars {
+        padding-#{$end}: 3rem;
+
+        @include rwd-df-down(sm) {
+          padding-#{$end}: 0;
+        }
+
+        &__star {
+          margin-#{$start}: 0.25rem;
+        }
+      }
+
+      &__content {
+        color: $primary-dark-color;
+        font-weight: 700;
+
+        @include rwd-df-down(sm) {
+          padding-top: 1rem;
+        }
+      }
+    }
+  }
+
+  &__cards {
+    padding-top: 5rem;
+
+    &__card {
+      background-color: $primary-dark-color;
+      border-radius: 0.7rem;
+
+      &__content {
+        padding: 2rem;
+
+        @include rwd-df-down(sm) {
+          padding: 4rem;
+        }
+      }
+
+      &__head {
+        display: flex;
+        align-items: center;
+        padding-bottom: 2rem;
+      }
+
+      &__img {
+        width: 5rem;
+        margin-#{$end}: 2rem;
+
+        img {
+          border-radius: 50%;
+          width: 100%;
+        }
+      }
+
+      &__title {
+        font-weight: 700;
+        text-transform: capitalize;
+
+        &:first-child {
+          color: $Neutral-light-color;
+        }
+
+        &:last-child {
+          color: $primary-light-color;
+        }
+      }
+
+      &__desc {
+        color: $Neutral-light-color;
+        font-size: 1.3rem;
+      }
+    }
+  }
+}
+
+//========== END MISSION SECTION ==========//
