@@ -79,7 +79,7 @@
       &__stars {
         padding-#{$end}: 3rem;
 
-        @include rwd-df-down(md) {
+        @include rwd-df-down(lg) {
           display: flex;
           flex-wrap: wrap;
           justify-content: center;
@@ -92,7 +92,7 @@
         &__star {
           margin-#{$start}: 0.25rem;
 
-          @include rwd-df-down(md) {
+          @include rwd-df-down(lg) {
             padding-top: 0.5rem;
           }
         }

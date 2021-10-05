@@ -194,7 +194,7 @@ ol {
                   flex-direction: column; } }
       .reviews__rates__rate__stars {
         padding-right: 3rem; }
-        @media (max-width: 991.98px) {
+        @media (max-width: 1199.98px) {
           .reviews__rates__rate__stars {
             display: -webkit-box;
             display: -ms-flexbox;
@@ -209,7 +209,7 @@ ol {
             padding-right: 0; } }
         .reviews__rates__rate__stars__star {
           margin-left: 0.25rem; }
-          @media (max-width: 991.98px) {
+          @media (max-width: 1199.98px) {
             .reviews__rates__rate__stars__star {
               padding-top: 0.5rem; } }
       .reviews__rates__rate__content {
