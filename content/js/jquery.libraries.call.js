@@ -8,6 +8,7 @@ $(document).ready(function () {
         items: 1,
         mouseDrag: true,
         touchDrag: true,
+        autoplay: true,
       },
       768: {
         items: 3,
