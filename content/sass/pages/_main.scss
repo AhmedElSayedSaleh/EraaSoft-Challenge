@@ -79,12 +79,22 @@
       &__stars {
         padding-#{$end}: 3rem;
 
+        @include rwd-df-down(md) {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
+        }
+
         @include rwd-df-down(sm) {
           padding-#{$end}: 0;
         }
 
         &__star {
           margin-#{$start}: 0.25rem;
+
+          @include rwd-df-down(md) {
+            padding-top: 0.5rem;
+          }
         }
       }
 

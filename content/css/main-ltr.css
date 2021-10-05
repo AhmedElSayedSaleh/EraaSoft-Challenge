@@ -194,11 +194,24 @@ ol {
                   flex-direction: column; } }
       .reviews__rates__rate__stars {
         padding-right: 3rem; }
+        @media (max-width: 991.98px) {
+          .reviews__rates__rate__stars {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -ms-flex-wrap: wrap;
+                flex-wrap: wrap;
+            -webkit-box-pack: center;
+                -ms-flex-pack: center;
+                    justify-content: center; } }
         @media (max-width: 767.98px) {
           .reviews__rates__rate__stars {
             padding-right: 0; } }
         .reviews__rates__rate__stars__star {
           margin-left: 0.25rem; }
+          @media (max-width: 991.98px) {
+            .reviews__rates__rate__stars__star {
+              padding-top: 0.5rem; } }
       .reviews__rates__rate__content {
         color: #502050;
         font-weight: 700; }

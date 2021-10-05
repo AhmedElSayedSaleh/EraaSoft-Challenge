@@ -7,7 +7,7 @@ $(document).ready(function () {
       0: {
         items: 1,
         mouseDrag: true,
-        // touchDrag: true,
+        touchDrag: true,
       },
       768: {
         items: 3,

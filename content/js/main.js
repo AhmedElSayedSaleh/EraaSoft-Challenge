@@ -12,6 +12,10 @@ window.addEventListener("resize", () => {
   sliderMarginTop();
 });
 
+window.addEventListener("orientationchange", () => {
+  sliderMarginTop();
+});
+
 let sliderMarginTop = () => {
   if (outerWidth > 767) {
     secondItem.style.marginTop = "5%";
